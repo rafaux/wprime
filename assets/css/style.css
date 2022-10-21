@@ -77,8 +77,10 @@ input[type=submit], button { transition: all .5s ease; }
     .category-header .right select { display: inline-block; width: 240px; height: 50px; margin-left: 60px; padding-left: 18px; vertical-align: middle; border: 2px solid var(--white); background: #fff url('../img/select.svg') no-repeat right 20px center; border-radius: 5px; font-size: 17px; color: var(--green); }
 
     /* header -> blog */
-    .blog-header { display: inline-block; width: 100%; height: auto; padding: 60px 0px; background-color: #F3F3F3; }
-    .blog-header h6 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); text-align: center; text-transform: uppercase; }
+    .blog-header { display: inline-block; width: 100%; height: auto; padding: 60px 0px; background-color: #F3F3F3; text-align: center; }
+    .blog-header h6 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); text-transform: uppercase; }
+    body.blog-categoria-id h6 { display: block; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); text-transform: uppercase; }
+    body.blog-categoria-id h5 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); }
 
 /* filter */
 .filter { display: none; }
@@ -260,15 +262,14 @@ input[type=submit], button { transition: all .5s ease; }
     #blog-feat figcaption span a::after { display: inline-block; width: auto; margin-left: 30px; font-family: 'Font Awesome 5 Pro'; vertical-align: middle; content: '\f178'; }
 
     /* blog -> list */
-    #blog-list header { display: block; margin-bottom: 60px; }
     #blog-list header h6 { display: inline-block; width: 50%; height: auto; font-weight: bold; font-size: 40px; color: var(--green); vertical-align: top; }
     #blog-list header p { display: inline-block; width: 48%; height: auto; padding-right: 150px; font-size: 22px; color: var(--gold); line-height: 30px; vertical-align: top; }
-    #blog-list aside { position: relative; display: inline-block; width: 404px; height: auto; padding-left: 94px; vertical-align: top; }
+    #blog-list aside { position: relative; display: inline-block; width: 404px; height: auto; margin-top: 60px; padding-left: 94px; vertical-align: top; }
     #blog-list aside::after { position: absolute; z-index: -1; top: 50px; left: -150px; width: 390px; height: 220px; background: transparent url('../img/category-aside-logo.svg') no-repeat; background-size: contain; opacity: .4; content: ''; }
     #blog-list aside nav ul li a { display: block; margin-bottom: 50px; font-weight: 600; font-size: 25px; color: var(--black); font-family: var(--fontserif); }
     #blog-list aside nav ul li.on a { position: relative; color: var(--gold); }
     #blog-list aside nav ul li.on a::before { position: absolute; top: 50%; left: -94px; width: 60px; height: 3px; background-color: var(--gold); transform: translateY(-50%); content: ''; }
-    #blog-list section { display: inline-block; width: calc(100% - 414px); height: auto; padding: 0px 0px 160px 100px; vertical-align: top; border-left: 1px solid #f3f3f3; }
+    #blog-list section { display: inline-block; width: calc(100% - 414px); height: auto; padding: 60px 0px 160px 100px; vertical-align: top; border-left: 1px solid #f3f3f3; }
     #blog-list section .grid { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; }
     #blog-list section .grid article:nth-of-type(even) { margin-top: 90px; }
     #blog-list section .grid figure { position: relative; display: inline-block; width: 100%; height: 265px; background-color: #000; border-radius: 5px; overflow: hidden; }
