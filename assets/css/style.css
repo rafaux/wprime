@@ -135,13 +135,34 @@ input[type=submit], button { transition: all .5s ease; }
 #category section .grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; }
 #category section .grid .building figcaption footer { grid-template-columns: repeat(2, 1fr); grid-gap: 18px; }
 
-/* category map */
-#category-map { display: inline-block; width: 100%; height: auto; margin: 100px 0px 150px 0px; }
-#category-map .container { max-width: 100%; padding: 0px 20px; }
-#category-map section { display: inline-block; width: 781px; padding-right: 32px; vertical-align: top; }
-#category-map section .grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; }
-#category-map section .grid .building figcaption footer { grid-template-columns: repeat(2, 1fr); grid-gap: 18px; }
-#category-map aside { display: inline-block; width: calc(100% - 784px); height: 1320px; background-color: var(--white); border-radius: 5px; overflow: hidden; vertical-align: top; }
+    /* category map */
+    #category-map { display: inline-block; width: 100%; height: auto; margin: 100px 0px 150px 0px; }
+    #category-map .container { max-width: 100%; padding: 0px 20px; }
+    #category-map section { display: inline-block; width: 781px; padding-right: 32px; vertical-align: top; }
+    #category-map section .grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; }
+    #category-map section .grid .building figcaption footer { grid-template-columns: repeat(2, 1fr); grid-gap: 18px; }
+    #category-map aside { display: inline-block; width: calc(100% - 784px); height: 1320px; background-color: var(--white); border-radius: 5px; overflow: hidden; vertical-align: top; }
+
+/* user */
+#user { position: relative; display: inline-block; width: 100%; height: auto; margin: 100px 0px 150px 0px; }
+#user .container { max-width: 100%; padding: 0px 20px; }
+#user section { display: inline-block; width: calc(100% - 448px); height: auto; padding-left: 60px; vertical-align: top; }
+#user section .grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; }
+#user section .grid .building figcaption footer { grid-template-columns: repeat(2, 1fr); grid-gap: 18px; }
+#user aside { display: inline-block; width: 440px; padding: 50px 35px 40px; background-color: #F3F3F3; border-radius: 8px; vertical-align: top; }
+#user aside::after { display: inline-block; width: 100%; height: 250px; margin-bottom: -320px; background: transparent url('../img/category-aside-logo.svg') no-repeat; background-size: contain; opacity: .4; content: ''; }
+#user aside .profile { display: inline-block; width: 100%; height: auto; box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802); border-radius: 5px; }
+#user aside figure { position: relative; display: block; height: 260px; background-color: #000; border-radius: 5px 5px 0px 0px; overflow: hidden; }
+#user aside figure img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; }
+#user aside figcaption { display: inline-block; width: 100%; height: auto; padding: 35px 25px; background-color: #fff; border-radius: 0px 0px 5px 5px; }
+#user aside figcaption small { display: block; color: var(--lightgray); font-size: 12px; }
+#user aside figcaption h2 { display: block; margin: 5px 0px; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); }
+#user aside figcaption span.link a { display: block; margin-bottom: 10px; color: var(--gold); }
+#user aside figcaption .desc { margin-top: 20px; padding-top: 20px; border-top: 1px solid #F3F3F3; }
+#user aside figcaption .desc strong {display: block; margin-bottom: 10px; font-weight: bold; font-size: 17px; color: var(--green); }
+#user aside figcaption .desc p { display: block; line-height: 22px; }
+#user aside figcaption .desc span a { display: inline-block; width: 100%; height: 50px; margin-top: 20px; background-color: var(--gold); color: #fff; border-radius: 5px; text-align: center; line-height: 50px; font-weight: bold; font-size: 17px; }
+#user aside figcaption .desc span a i { display: inline-block; margin-right: 10px; }
 
 /* building */
 .building { position: relative; background-color: #fff; border-radius: 5px; overflow: hidden; }
