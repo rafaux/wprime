@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+    // Qtd
+    $('#category aside .qtd nav ul li').click(function(){
+        $(this).parent().find('li').removeClass('on');
+        $(this).addClass('on');
+    })
 	
     // Slick -> Building (Figures)
     $('.building span.imgs figure').slick({
