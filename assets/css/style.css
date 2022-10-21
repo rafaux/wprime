@@ -76,11 +76,11 @@ input[type=submit], button { transition: all .5s ease; }
     .category-header .right span.on a { color: var(--gold); }
     .category-header .right select { display: inline-block; width: 240px; height: 50px; margin-left: 60px; padding-left: 18px; vertical-align: middle; border: 2px solid var(--white); background: #fff url('../img/select.svg') no-repeat right 20px center; border-radius: 5px; font-size: 17px; color: var(--green); }
 
-    /* header -> blog */
-    .blog-header { display: inline-block; width: 100%; height: auto; padding: 60px 0px; background-color: #F3F3F3; text-align: center; }
-    .blog-header h6 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); text-transform: uppercase; }
-    body.blog-categoria-id h6 { display: block; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); text-transform: uppercase; }
-    body.blog-categoria-id h5 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); }
+    /* header -> title */
+    .title-header { display: inline-block; width: 100%; height: auto; padding: 60px 0px; background-color: #F3F3F3; text-align: center; }
+    .title-header h6 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); text-transform: uppercase; }
+    body.title-categoria-id h6 { display: block; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); text-transform: uppercase; }
+    body.title-categoria-id h5 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); }
 
 /* filter */
 .filter { display: none; }
@@ -234,6 +234,44 @@ input[type=submit], button { transition: all .5s ease; }
 #spy section article small { display: block; color: var(--lightgray); font-size: 12px; }
 #spy section article h3 { display: block; margin: 12px 0px 7px 0px; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); }
 #spy section article strong { display: block; font-weight: 600; font-size: 14px; color: var(--gold); }
+
+/* contact */
+#contact section { display: inline-block; width: 790px; height: auto; padding: 120px 110px 120px 0px; vertical-align: top; }
+#contact section header h1 { display: block; margin-bottom: 15px; padding: 0px 80px; font-size: 32px; color: var(--green); }
+#contact section header p { display: block; padding: 0px 80px 40px 80px; line-height: 22px; }
+#contact section .box { display: inline-block; width: 100%; height: auto; padding: 60px 60px 60px 80px; background-color: #f3f3f3; border-radius: 5px; }
+#contact section .box label { display: inline-block; width: 100%; padding: 0px 20px 15px 0px; }
+#contact section .box label.lb-1-3 { width: 40%; }
+#contact section .box label.lb-2-3 { width: 60%; margin-left: -3px; }
+#contact section .box label input,
+#contact section .box label select { display: inline-block; width: 100%; height: 50px; padding: 0px 18px; background-color: #fff; border: 2px solid #dedede; border-radius: 5px; color: var(--green); font-size: 17px; transition: all .5s ease; }
+#contact section .box label select { background: #fff url('../img/select.svg') no-repeat right 20px center; color: #B3B3B3; }
+#contact section .box label textarea { display: inline-block; width: 100%; height: 160px; padding: 15px 18px; background-color: #fff; border: 2px solid #dedede; border-radius: 5px; color: var(--green); font-size: 17px; transition: all .5s ease; }
+#contact section .box label ::placeholder { color: #B3B3B3; }
+#contact section .box label :focus, 
+#contact section .box label :active,
+#contact section .box label :focus-within { border-color: var(--gold); }
+#contact section .box label.check { position: relative; padding: 0px 0px 0px 35px; color: #b3b3b3; font-size: 12px; }
+#contact section .box label.check input[type=checkbox] { position: absolute; top: -4px; left: 0px; width: 20px; height: 20px; padding: 0px; cursor: pointer; }
+#contact section .box label.check input[type=checkbox]:checked { background-color: var(--gold); border-color: var(--gold); }
+#contact section .box label.check input[type=checkbox]:checked::after { position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); font-family: 'Font Awesome 5 Pro'; font-size: 12px; content: '\f00c'; }
+#contact section .box label button { display: inline-block; width: auto; margin-top: 36px; padding: 15px 30px; line-height: 25px; font-weight: bold; font-size: 17px; background-color: var(--gold); color: #fff; text-align: center; border-radius: 5px; }
+#contact aside { position: relative; display: inline-block; width: calc(100% - 800px); height: auto; padding: 120px 0px 120px 110px; vertical-align: top; border-left: 1px solid #F3F3F3; }
+#contact aside::after { position: absolute; z-index: -1; top: 250px; right: -120px; width: 515px; height: 290px; background: transparent url('../img/contact-logo.svg') no-repeat; background-size: contain; opacity: .4; content: ''; }
+#contact aside span { display: block; margin-bottom: 40px; }
+#contact aside span:first-of-type { margin-top: 190px; }
+#contact aside span strong { display: block; margin-bottom: 10px; font-weight: bold; font-family: var(--fontserif); color: var(--green); }
+#contact aside span address,
+#contact aside span b a { display: block; margin-bottom: 8px; font-weight: 700; font-size: 17px; color: var(--gold); line-height: 25px; font-style: normal; }
+#contact aside span.social small { display: inline-block; width: auto; margin-right: 37px; vertical-align: middle; font-size: 28px; }
+#contact aside span.social small:last-of-type { margin-right: 0px; }
+#contact aside span.social small a { color: var(--gold); }
+
+    /* contact -> map */
+    #contact-map { margin-bottom: 160px; }
+    #contact-map h6 { display: block; margin-bottom: 20px; font-size: 32px; color: var(--green); }
+    #contact-map .map { display: inline-block; width: 100%; height: auto; padding: 60px 80px; border-radius: 5px; background-color: #F3F3F3; }
+    #contact-map .map iframe { display: inline-block; width: 100%; height: 460px; border-radius: 5px; box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802); }
 
 /* blog */
 #blog { margin-bottom: 100px; }
