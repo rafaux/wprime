@@ -79,8 +79,8 @@ input[type=submit], button { transition: all .5s ease; }
     /* header -> title */
     .title-header { display: inline-block; width: 100%; height: auto; padding: 60px 0px; background-color: #F3F3F3; text-align: center; }
     .title-header h6 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); text-transform: uppercase; }
-    body.title-categoria-id h6 { display: block; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); text-transform: uppercase; }
-    body.title-categoria-id h5 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); }
+    body.blog-categoria-id .title-header h6 { display: block; font-weight: 600; font-family: var(--fontserif); font-size: 22px; color: var(--green); text-transform: uppercase; }
+    body.blog-categoria-id .title-header h5 { display: block; font-weight: 300; font-size: 65px; color: var(--gold); }
 
 /* filter */
 .filter { display: none; }
