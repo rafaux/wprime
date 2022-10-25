@@ -2,7 +2,9 @@ $(document).ready(function(){
 
     // Qtd
     $('#category aside .qtd nav ul li').click(function(){
+        var num = $(this).html();
         $(this).parent().find('li').removeClass('on');
+        $(this).parent().parent().find('input').val(num);
         $(this).addClass('on');
     })
 	

@@ -131,6 +131,7 @@ input[type=submit], button { transition: all .5s ease; }
 #category aside .value .line label { position: relative; display: inline-block; width: 100%; height: 50px; }
 #category aside .value .line label small { position: absolute; top: 50%; left: 18px; transform: translateY(-50%); font-weight: bold; font-size: 17px; color: #333; }
 #category aside .value .line.line-num small { left: auto; right: 18px; }
+#category aside .qtd nav { display: block; margin-bottom: 15px; }
 #category aside .qtd nav ul li { display: inline-block; width: auto; margin-right: 10px; padding: 7px 18px; background-color: #fff; border-radius: 5px; font-weight: bold; color: #333; cursor: pointer; transition: all .5s ease; }
 #category aside .qtd nav ul li.on { background-color: var(--green); color: #fff; }
 #category aside button { display: inline-block; width: 100%; height: 50px; margin: 20px 0px; background-color: var(--gold); color: #fff; border-radius: 5px; text-align: center; font-weight: bold; }
@@ -148,6 +149,19 @@ input[type=submit], button { transition: all .5s ease; }
     #category-map section .grid { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 20px; }
     #category-map section .grid .building figcaption footer { grid-template-columns: repeat(2, 1fr); grid-gap: 18px; }
     #category-map aside { display: inline-block; width: calc(100% - 784px); height: 1320px; background-color: var(--white); border-radius: 5px; overflow: hidden; vertical-align: top; }
+
+/* pagination */
+.pagination { display: inline-block; width: 100%; height: auto; margin-top: 40px; text-align: center; }
+.pagination li { display: inline-block; width: auto; vertical-align: middle; }
+.pagination li a { display: block; width: 48px; height: 48px; text-align: center; line-height: 46px; border-radius: 100%; font-weight: bold; font-size: 19px; color: var(--green); }
+.pagination li.active a { background-color: var(--gold); color: #fff; }
+.pagination li.on a { background-color: var(--gold); border-color: var(--gold); color: #fff; }
+.pagination li.arrow a { width: 56px; border-radius: 5px; border: 1px solid #f3f3f3; color: var(--white); }
+.pagination li.arrow-first { margin-right: 10px; }
+.pagination li.arrow-prev { margin-right: 60px; }
+.pagination li.arrow-last { margin-left: 10px; }
+.pagination li.arrow-next { margin-left: 60px; }
+.pagination li.arrow.arrow-last.on a { background-color: #fff; border-color: #f3f3f3; color: var(--black); }
 
 /* user */
 #user { position: relative; display: inline-block; width: 100%; height: auto; margin: 100px 0px 150px 0px; }
