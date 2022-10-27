@@ -388,6 +388,44 @@ input[type=submit], button { transition: all .5s ease; }
     #blog-list footer span a { display: inline-block; width: 125px; height: 125px; padding: 30px 20px 0px 20px; border-radius: 100%; box-shadow: 0px 20px 20px rgba(0,0,0,.1); font-weight: 600; font-family: var(--fontserif); font-size: 14px; color: var(--green); text-transform: lowercase; line-height: 1.4; }
     #blog-list footer span a i { display: block; margin-bottom: 8px; font-size: 20px; }
 
+    /* blog post */
+    #blog-post { padding: 90px 0px; }
+    #blog-post .container { max-width: 1080px; }
+    #blog-post header h1 { display: block; font-weight: bold; font-size: 40px; color: var(--green); }
+    #blog-post header p { display: block; margin: 15px 0px 40px 0px; font-weight: 400; font-size: 19px; line-height: 28px; }
+    #blog-post header small { display: inline-block; width: auto; vertical-align: middle; font-weight: bold; color: var(--green); }
+    #blog-post header span { display: inline-block; width: auto; margin-left: 18px; vertical-align: middle; }
+    #blog-post header span i { display: inline-block; color: var(--gold); font-size: 18px; }
+    #blog-post header span a { font-weight: bold; color: var(--green); }
+    #blog-post header span.print::before { display: inline-block; width: 6px; height: 6px; margin: 0px 50px -2px 35px; background-color: var(--gold); border-radius: 100%; vertical-align: super; content: ''; }
+    #blog-post header span.print i { margin-right: 18px; }
+    #blog-post header figure { position: relative; display: inline-block; width: 100%; height: 550px; margin: 73px 0px 60px 0px; border-radius: 5px; overflow: hidden; }
+    #blog-post header figure img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; }
+    #blog-post section { position: relative; display: inline-block; width: 100%; height: auto; padding-left: 200px; }
+    #blog-post section::before { position: absolute; z-index: -1; top: 0px; left: -420px; width: 520px; height: 290px; background: transparent url(../img/contact-logo.svg) no-repeat; background-size: contain; opacity: .4; content: ''; }
+    #blog-post section h1,
+    #blog-post section h2 { display: block; width: 70%; margin: 80px 0px 40px 0px; font-family: var(--fontserif); font-size: 25px; line-height: 34px; }
+    #blog-post section p { display: block; margin-bottom: 22px; line-height: 22px; }
+    #blog-post section p a { font-weight: bold; text-decoration: underline; color: var(--green); }
+    #blog-post section .block { display: inline-block; width: 100%; height: auto; margin: 22px 0px 44px 0px; padding: 60px 100px; background-color: #f3f3f3; border-radius: 5px; }
+    #blog-post section .block h1,
+    #blog-post section .block h2 { margin-top: 0px; }
+    #blog-post section nav { display: block; margin-bottom: 22px; }
+    #blog-post section nav li { position: relative; display: block; padding-left: 25px; font-weight: bold; color: var(--green); line-height: 22px; }
+    #blog-post section nav li::before { position: absolute; top: 50%; left: 10px; width: 4px; height: 4px; background-color: var(--green); border-radius: 100%; transform: translateY(-50%); content: ''; }
+    #blog-post footer .author { display: flex; margin-top: 60px; align-items: center; justify-content: space-between; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #f3f3f3; }
+    #blog-post footer .author .left { display: flex; align-items: center; justify-content: space-between; }
+    #blog-post footer .author .left figure { position: relative; display: flex; width: 56px; height: 56px; margin-right: 16px; background-color: #000; border-radius: 100%; overflow: hidden; }
+    #blog-post footer .author .left figure img { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; }
+    #blog-post footer .author .left figcaption strong { display: block; margin-bottom: 3px; font-weight: bold; font-family: var(--fontserif); font-size: 22px; color: var(--green); }
+    #blog-post footer .author .left figcaption em { display: block; font-style: normal; font-size: 12px; color: var(--gold); }
+    #blog-post footer .author .share { display: flex; text-align: right; }
+    #blog-post footer .author .share small { display: flex; color: var(--gold); }
+    #blog-post footer .author .share span { display: flex; margin-left: 22px; font-size: 18px; }
+    #blog-post footer .author .share span a { color: var(--green); }
+    #blog-post footer span.back a { display: block; font-weight: bold; color: var(--green); }
+    #blog-post footer span.back a::before { display: inline-block; width: auto; margin-right: 22px; font-family: 'Font Awesome 5 Pro'; font-size: 18px; color: var(--gold); vertical-align: middle; content: '\f177'; }
+
 /* testimonials */
 #testimonials { margin-bottom: 175px; }
 #testimonials section { margin-top: 36px; }
